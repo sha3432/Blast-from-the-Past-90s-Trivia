@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>90s Trivia Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" onclick="showQuiz()">Quiz</a>
+      <a href="#" onclick="showMemoryLane()">Memory Lane</a>
+      <a href="#" onclick="showFeedback()">Feedback</a>
+      <a href="#" onclick="showResources()">Nostalgic Resources</a>
+    </div>
+    <div class="header">🖥️ 90s Trivia Challenge 🖱️</div>
+    <div class="main-content">
+      <div class="quiz-container" id="quizContainer">
+        <div id="quiz">
+          <div class="question" id="questionText">
+            Select a topic to start the quiz:
+          </div>
+          <div id="options">
+            <div class="option" onclick="startQuiz('tech')">Tech</div>
+            <div class="option" onclick="startQuiz('education')">Education</div>
+            <div class="option" onclick="startQuiz('politics')">Politics</div>
+            <div class="option" onclick="startQuiz('movies')">Movies</div>
+          </div>
+          <div class="hint" id="hint"></div>
+          <div class="result" id="result"></div>
+          <div class="timer" id="timer"></div>
+          <button
+            class="restart-btn"
+            id="restartBtn"
+            style="display: none"
+            onclick="restartQuiz()"
+          >
+            Restart Quiz
+          </button>
+          <div class="trivia-fact" id="triviaFact"></div>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+          <h3>Leaderboard</h3>
+          <ul id="leaderboardList">
+            <li>Top Score: 0</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="memory-container" id="memoryContainer" style="display: none">
+        <h3>Memory Lane</h3>
+        <textarea
+          class="memory-input"
+          id="memoryInput"
+          placeholder="Share your favorite 90s memory..."
+        ></textarea>
+        <button class="feedback-btn" onclick="submitMemory()">
+          Submit Memory
+        </button>
+        <div class="memory-display" id="randomMemory"></div>
+      </div>
+
+      <div
+        class="feedback-container"
+        id="feedbackContainer"
+        style="display: none"
+      >
+        <h3>Feedback and Suggestions</h3>
+        <textarea
+          class="feedback-input"
+          id="feedbackInput"
+          placeholder="Your feedback or suggestions..."
+        ></textarea>
+        <button class="feedback-btn" onclick="submitFeedback()">
+          Submit Feedback
+        </button>
+      </div>
+
+      <div
+        class="resources-container"
+        id="resourcesContainer"
+        style="display: none"
+      >
+        <h3>Explore the 90s
+        </h3>
+        <div class="resources-list">
+          <h4>Articles and Documentaries:</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.bing.com/ck/a?!&&p=f908e5b425ef88e636d24bea2baca74da337df79411b8c99ef0a9c5f411293efJmltdHM9MTczNDEzNDQwMA&ptn=3&ver=2&hsh=4&fclid=314f536f-2175-6ca3-2e01-47d620ee6d1d&psq=1990s+tech&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvMTk5MHNfaW5fc2NpZW5jZV9hbmRfdGVjaG5vbG9neQ&ntb=1"
+                target="_blank"
+                >1990s in science and technology</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.history.com/topics/1990s/1990s"
+                target="_blank"
+                >The 1990s: A Decade of Change</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.indiatimes.com/trending/human-interest/90s-kids-school-374738.html"
+                target="_blank"
+                >38 Happy Memories That Only 90s Kids Will Feel Nostalgic
+                About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.thegamer.com/most-important-90s-video-games-all-time/"
+                target="_blank"
+                >The 30 Most Important 90s Video Games Of All Time</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.weareteachers.com/teaching-in-the-90s/?form=MG0AV3"
+                target="_blank"
+                >Teaching was different in 1990s</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.encyclopedia.com/social-sciences/culture-magazines/1990s-education-overview?form=MG0AV3"
+                target="_blank"
+                >The 1990s Education</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 2024 90s Trivia Quiz</div>
+
+  </body>
+</html>

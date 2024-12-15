@@ -1,0 +1,185 @@
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #ffcc00;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #000000;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/e529e4123025005.60e5cd3ad2179.gif");
+}
+
+.navbar {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #ff6600;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1px 1px #000;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quiz-container,
+.memory-container,
+.feedback-container,
+.resources-container {
+  background-color: #e0e0e0;
+  border: 5px solid #ff6600;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #000000;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.question {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.option {
+  background-color: #ffcc00;
+  border: 2px solid #000000;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.1em;
+}
+
+.option:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ff6600;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.restart-btn {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ff6600;
+}
+
+.leaderboard {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#leaderboardList {
+  list-style: none;
+}
+
+.hint {
+  margin-top: 15px;
+  font-style: italic;
+  color: #ff6600;
+}
+
+.footer {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.memory-input {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.feedback-input {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.feedback-btn {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.memory-display {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ff6600;
+}
+
+.resources-list {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.resources-list a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.resources-list a:hover {
+  text-decoration: underline;
+}
+
+.trivia-fact {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6600;
+}
